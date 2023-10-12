@@ -69,10 +69,12 @@ public class RectangleInfo {
         } else {
             checkSquare = false;
 
-            mathPerimeter = sideWidth++ + sideLength++;
+            mathPerimeter = sideWidth + sideWidth + sideLength + sideLength;
             mathArea = sideLength * sideWidth;
 
-            System.out.printf("The Perimeter of your rectangle is : %5.2f", mathPerimeter);
+            System.out.printf("The Width of your rectangle is : %9.2f", sideWidth);
+            System.out.printf("\nThe Length of your rectangle is : %7.2f", sideLength);
+            System.out.printf("\nThe Perimeter of your rectangle is : %5.2f", mathPerimeter);
             System.out.printf("\nThe Area of your rectangle is : %10.2f", mathArea);
         }
 
